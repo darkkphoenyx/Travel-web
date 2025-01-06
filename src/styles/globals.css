@@ -1,0 +1,862 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+/* used google fonts */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    h1,h2,h3,h4,h5{
+        @apply font-serif;
+    }
+    p{
+        @apply font-sans text-base;
+    }
+    body{
+        @apply font-sans text-base;
+    }
+    svg{
+      @apply max-w-full;
+    }
+    html{
+      @apply scroll-smooth;
+    }
+}
+
+/* extra CSS */
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* 
+===========================================================
+Common Text Classes
+===========================================================
+*/
+.section-title-v1{
+  @apply text-dark-1 font-medium lg:text-3xl text-2xl;
+}
+.section-title-v2{
+  @apply font-bold lg:text-2xl md:text-xl text-[28px] leading-[1.46] mt-[10px];
+}
+.section-title-v3{
+  @apply font-bold lg:text-3xl md:text-2xl text-xl text-white leading-[1.46] mt-[10px];
+}
+.section-sub-title-v1{
+  @apply font-cursive lg:text-lg text-2md text-primary-1 mb-1 leading-1.2 ;
+}
+.variant-2.section-sub-title-v1{
+  @apply text-secondary-1;
+}
+.regular-text-v1{
+  @apply lg:text-base text-sm font-sans text-dark-3 leading-1.9 ;
+}
+.partner-logo-item{
+  @apply lg:h-[154px] h-24 flex justify-center items-center border-r border-primary-1;
+}
+.card-title-alpha{
+  @apply capitalize lg:text-[22px] text-2md text-dark-1 font-medium leading-1.4 lg:leading-1.4 hover:text-primary-1 duration-300;
+}
+.card-title-alpha-v2{
+  @apply lg:text-[22px] text-white font-medium text-2md leading-1.4 lg:leading-1.4 hover:text-primary-1 duration-300;
+}
+.footer-nav-link{
+  @apply text-stock-1 relative font-medium lg:text-base text-sm leading-1.8 inline-block duration-200 hover:text-primary-1 ; 
+}
+.footer-nav-link-v2{
+  @apply text-stock-1 relative font-medium lg:text-base text-sm leading-1.8 inline-block duration-200 hover:text-primary-1 ; 
+}
+.gradient-border-bottom{
+  @apply relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:left-0  before:bg-footer-border;
+}
+.gradient-border-top{
+  @apply relative before:content-[''] before:absolute before:w-full before:h-[2px] before:top-0 before:left-0  before:bg-footer-border;
+}
+.insta-feed-icon{
+  @apply absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 bg-white rounded-full flex justify-center items-center lg:shadow-[0_0_0_5px_#ffffff66] opacity-0 duration-300 group-hover:opacity-100 group-hover:top-1/2 hover:bg-primary-1 hover:text-white;
+}
+.footer-link-list li{
+  @apply mt-[14px] first:mt-0;
+}
+.footer-link-list-v2 li{
+  @apply mt-[10px] first:mt-0;
+}
+.fixed-title{
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+/* 
+===========================================================
+Custom Components
+===========================================================
+*/
+
+/* buttons components */
+.social_icon_varient__one{
+  @apply flex shrink-0 justify-center mr-3 items-center text-dark-1 bg-white h-9 w-9 lg:h-10 lg:w-10 text-md rounded-full lg:shadow-[0_0_0_5px_#ffffff66] shadow-[0_0_0_3px_#ffffff66] lg:group-hover:shadow-[0_0_0_7px_#E8604C4d] group-hover:shadow-[0_0_0_4px_#E8604C4d] group-hover:bg-primary-1 transition-all duration-300 ease-in lg:mr-4 ;
+}
+
+.btn_primary__v1{
+  @apply bg-primary-1 lg:py-4 lg:px-10 py-3 px-6 inline-flex gap-2 items-center z-1 text-white font-medium font-sans relative before:absolute before:content-[''] before:inset-0 before:bg-[#d0aa6c] before:z-minus before:translate-x-2 before:-translate-y-2 before:duration-300 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:hover:translate-y-0;
+}
+.btn_primary__v1.outlined{
+  @apply bg-transparent border border-primary-1 text-primary-1 hover:text-white;
+}
+
+.btn_primary__v1.variant-2{
+  @apply bg-secondary-1 before:bg-[#FA7452];
+}
+.btn_primary__v2{
+@apply text-dark-1 text-base bg-primary-1 inline-flex font-medium px-9 py-[15px]  z-1  relative before:absolute before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-full before:bg-[#e7e180] before:z-minus before:scale-y-0 before:origin-bottom hover:before:scale-y-100 before:duration-300 before:ease-in
+}
+.package-filter-btn{
+  @apply border-primary-1 border text-primary-1 inline-flex items-center justify-center h-14 lg:h-16 lg:text-2md text-base gap-[10px] lg:px-9 px-6 py-4 hover:border-primary-2 hover:bg-primary-1 hover:bg-opacity-10 duration-200 focus:bg-primary-1 focus:border-primary-2 focus:bg-opacity-10 lg:mr-base lg:last:mr-0 mr-4 last:mr-0;
+}
+.package-filter-btn *{
+@apply pointer-events-none;
+}
+.explore-btn{
+@apply flex w-full px-3 py-2 border border-primary-1 text-primary-1 font-medium lg:text-md text-base duration-300 justify-center items-center lg:h-12 h-10 mt-7 relative z-1 after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-primary-1 after:z-minus after:-translate-x-[4%] after:translate-y-[12%] after:duration-300 after:opacity-0 after:invisible hover:text-white hover:after:opacity-100 hover:after:visible hover:after:translate-x-0 hover:after:translate-y-0;
+}
+.package-explore-btn{
+  @apply ease-in-out hover:text-primary-1 duration-200 inline-flex items-center lg:mt-6 mt-5 lg:text-base text-[14px] text-dark-1 font-medium;
+}
+
+.package-explore-btn svg{
+  @apply max-w-[22px]
+}
+
+.package-explore-btn i{
+  @apply text-lg;
+}
+/* rating compoennt */
+.rating-group-md li{
+  @apply lg:text-md text-base text-primary-1 mr-[14px] last:mr-0;
+}
+
+/* Paginition compoennt */
+.common-pagination{
+  @apply lg:mt-17 mt-12 flex justify-center
+}
+.common-pagination .swiper-pagination-bullet{
+  @apply h-[10px] w-[10px] bg-white rounded-full opacity-100 !mx-[10px] relative before:absolute before:content-[''] before:-inset-1 before:rounded-full before:border before:border-transparent duration-150 before:duration-150;
+}
+.common-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  @apply bg-primary-1 before:border-primary-1 before:border-opacity-100;
+}
+
+/* hamburger */
+.herder-variant-two .hamburger span{
+  @apply bg-white;
+}
+.herder-variant-three .hamburger span{
+  @apply bg-white;
+}
+.herder-variant-three.sticky .hamburger span{
+  @apply bg-dark-1;
+}
+.hamburger{
+  @apply shrink-0 inline-flex justify-center items-center  h-[1.5rem] w-[2rem]  relative outline-none;
+}
+.hamburger span{
+  @apply absolute w-full h-[2px] bg-dark-1 rounded-full duration-200;
+}
+.hamburger span:first-child{
+  @apply  top-0 origin-left-center;
+  
+}
+.hamburger span:last-child{
+  @apply  bottom-0 origin-bottom-left
+}
+.hamburger span:nth-child(2){
+  @apply  top-1/2 -translate-y-1/2;
+}
+
+.hamburger.hum-active span:nth-child(2){
+  @apply -translate-x-1/2 opacity-0;
+}
+.hamburger.hum-active span:first-child{
+  @apply rotate-[45deg]  top-[.5px]
+}
+.hamburger.hum-active span:last-child{
+  @apply rotate-[-45deg] bottom-[.5px]
+}
+
+/* breadcrumb */
+.breadcrumb{
+  @apply font-cursive  text-white relative z-1 before:absolute before:content-[""] before:z-minus before:w-[100px] before:h-[100px] before:rounded-full before:-translate-y-1/2 before:-translate-x-1/3 before:bg-gradient-to-b from-[#ffffff59]
+}
+.breadcrumb li{
+  @apply lg:text-lg text-md inline-block px-2 first:pl-0 text-white relative before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-[3px] before:w-[3px] before:rounded-full before:bg-white first:before:hidden;
+}
+
+.breadcrumb li.active_page{
+  @apply inline-block px-3 first:pl-0 text-opacity-70;
+}
+
+/*social icon */
+.guide_social__icon{
+  @apply inline-block mt-3 lg:ml-5 ml-4 first:ml-0 lg:first:ml-0;
+}
+.guide_social__icon a{
+  @apply h-[34px] w-[34px] border border-stock-1 border-opacity-80 flex justify-center items-center text-dark-2 hover:bg-primary-1 hover:border-primary-1 hover:text-dark-1 duration-300;
+}
+.primary_social__icon{
+  @apply border border-stock-1 h-9 w-9 rounded-[3px] inline-flex justify-center items-center text-dark-3 duration-200 hover:bg-primary-1 hover:text-white
+}
+/* input styles */
+.input_style__primary{
+  @apply w-full bg-transparent border border-stock-1 lg:h-[54px] h-12 px-5 py-2 text-dark-2 placeholder:text-dark-4 placeholder:text-sm outline-none focus:border-primary-1
+}
+textarea.input_style__primary{
+  @apply h-auto py-3;
+}
+.varient-2.select_style__two .select2-container--default .select2-selection--single .select2-selection__arrow{
+  @apply text-secondary-1;
+}
+.varient-2.select_style__two .select2 .selection .select2-selection{
+  @apply border-secondary-1 text-md text-secondary-1;
+}
+.varient-2.select_style__two .select2 .selection .select2-selection .select2-selection__rendered{
+  @apply p-0 text-primary-1;
+}
+.varient-1.select_style__two .select2 .selection .select2-selection .select2-selection__rendered{
+  @apply p-0 text-secondary-1;
+}
+.varient-1.select_style__two .select2-container--default .select2-selection--single .select2-selection__arrow{
+  @apply text-secondary-1;
+}
+.varient-1.select_style__two .select2 .selection .select2-selection{
+  @apply text-secondary-1 !border-secondary-1;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+  background-color: #E8604C !important;
+}
+.select2-dropdown{
+  border-radius: 0 !important;
+  border: 1px solid #E8604C !important;
+}
+.select2-search__field{
+  border: 1px solid #ff7c5b9a !important;
+  outline: none;
+}
+.select2-search__field:focus{
+  outline: none;
+  border: 1px solid #E8604C !important;
+}
+/* 
+===========================================================
+Styling for long TW class
+===========================================================
+*/
+
+/* hero section */
+.hero-card-sm{
+  @apply  xl:h-[calc(50%-15px)] h-[calc(50%-6px)] shrink-0 relative overflow-hidden xl:first:mb-base first:mb-3;
+}
+
+/* menubar CSS */
+.header-style.herder-variant-two.sticky{
+  @apply bg-[#121316];
+}
+.herder-variant-three.sticky .cart__wrap{
+  @apply text-dark-1;
+}
+.nav-link{
+  @apply py-7 inline-block text-base text-dark-1 uppercase
+}
+.herder-variant-two .nav-link{
+  @apply text-white;
+}
+.herder-variant-three .nav-link{
+  @apply xl:text-white;
+}
+.herder-variant-three.sticky .nav-link{
+  @apply xl:text-dark-1;
+}
+.herder-variant-three .nav-link.has-dropdown::before{
+  @apply xl:text-white;
+}
+.herder-variant-three.sticky .nav-link.has-dropdown::before{
+  @apply xl:text-dark-1;
+}
+.nav-link-sm{
+  @apply !py-[10px] border-b border-stock-1 !block px-3 relative
+}
+.nav-link-sm.has-dropdown.nav-link{
+  @apply before:absolute before:content-['\f282'] before:w-4 before:h-[23px] before:right-3 before:top-1/2 before:-translate-y-1/2 before:font-bootstarp;
+}
+.nav-link.has-dropdown{
+  @apply relative before:absolute before:content-['\f4fe'] before:font-bootstarp before:top-1/2 before:-translate-y-1/2 before:right-[-20px] before:text-dark-1;  
+}
+.herder-variant-two .nav-link.has-dropdown{
+  @apply before:text-white;
+}
+.nav-list > li{
+  @apply relative 2xl:mx-7 mx-5;
+}
+.nav-dropdown{
+  @apply absolute top-full left-0 z-10 w-60 py-2 px-6 translate-y-4 bg-white shadow-sm border-t border-stock-2 opacity-0 invisible group-hover/step-one:opacity-100 group-hover/step-one:visible group-hover/step-one:translate-y-0 duration-300 ;
+}
+.nav-dropdown > li{
+  @apply  border-b border-stock-1 last:border-b-0;
+}
+.nav-dropdown > li a{
+  @apply text-dark-2 text-sm hover:text-primary-1 duration-200 py-[9px] block ;
+}
+.herder-variant-two .nav-dropdown-sm{
+@apply text-white;
+}
+.nav-dropdown-sm{
+  @apply py-2 px-4 mx-2 my-3 relative border border-stock-2 hidden opacity-0 duration-200 transition-opacity;
+}
+.nav-dropdown-sm > li a{
+  @apply py-2 block
+}
+.nav-dropdown-sm.nav-show{
+  @apply block opacity-100;
+}
+.nav-mega-dropdown{
+  @apply absolute top-full left-1/2 -translate-x-1/2 bg-white w-[740px] z-10 pb-0 pl-6 translate-y-4 border border-stock-2 opacity-0 invisible group-hover/mega-dropdown:opacity-100 group-hover/mega-dropdown:visible group-hover/mega-dropdown:translate-y-0 duration-300;
+}
+.nav-mega-dropdown .mega-dropdown-links a{
+  @apply py-2 block hover:text-primary-1 duration-200;
+}
+.herder-variant-two .mobil-menu{
+  @apply bg-[#121316];
+}
+.mobil-menu{
+  @apply absolute max-h-[500px] overflow-y-scroll w-full bg-white border border-stock-1 top-full left-0 z-10  scale-y-0 origin-top-right duration-200;
+}
+.mobil-menu.mm-active{
+  @apply scale-y-100
+}
+.nav-mega-dropdown{
+  @apply text-sm text-dark-2  
+}
+.mega-dropdown-links{
+  @apply py-3
+}
+/* Hero style two css */
+.hero-two-single-slide{
+  @apply lg:min-h-screen bg-cover bg-center bg-no-repeat !flex justify-center items-center !relative z-1  before:absolute before:content-[''] before:inset-0 before:bg-dark-1 before:bg-opacity-50
+}
+.hero-two-single-slide.swiper-slide-active .zoom-image{
+  @apply scale-110 duration-[5s]
+}
+
+/* Package section styles */
+.package-card-style-one .package-feature li{
+  @apply inline-flex items-center lg:mr-5 lg:last:mr-0 mr-3 last:mr-0;
+}
+.package-card-style-one .package-feature li span{
+  margin-right: 8px;
+}
+
+.hero-glow-text{
+  font-family: Poppins;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px
+}
+
+.jarallax {
+  height: 100%;
+}
+/* 
+===========================================================
+Customiz Third-Party Plugins
+===========================================================
+*/
+
+.select_style__one .select2 .selection .select2-selection {
+  @apply lg:h-17 h-14 text-start text-md text-dark-2 flex items-center rounded-none pr-4 lg:pl-[60px] pl-[50px] font-medium
+}
+
+.select_style__one .select2 .selection .select2-selection .select2-selection__rendered{
+  @apply p-0;
+}
+.select_style__one  .select2-container--default .select2-selection--single .select2-selection__arrow{
+  @apply absolute top-1/2 right-4 -translate-y-1/2;
+}
+
+.select2-results__option{
+  @apply text-sm px-3
+}
+
+.select_style__two .select2 .selection .select2-selection {
+  @apply lg:h-17 h-14 text-start bg-transparent border border-primary-1 text-md text-primary-1 flex items-center rounded-none pr-4 lg:pl-[60px] pl-[50px] font-medium
+}
+
+.select_style__two .select2 .selection .select2-selection .select2-selection__rendered{
+  @apply p-0 text-primary-1;
+}
+.select_style__two  .select2-container--default .select2-selection--single .select2-selection__arrow{
+  @apply absolute top-1/2 right-4 -translate-y-1/2 text-primary-1;
+}
+.select_style__two  .select2-container{
+  @apply !w-full;
+}
+.select_style__three .select2 .selection .select2-selection{
+  @apply lg:h-[54px] h-12 px-5 py-2 rounded-none flex items-center border border-stock-1 outline-none focus:border-primary-1
+}
+.select_style__three .select2-container--default .select2-selection--single .select2-selection__arrow{
+  @apply absolute top-1/2 right-3 -translate-y-1/2 text-primary-1;
+}
+
+
+/* react datepicker custom style */
+.react-datepicker-wrapper{
+  display: block !important;
+}
+.react-datepicker{
+  @apply !border-primary-1 !border !rounded-none !text-gray-900 
+}
+.react-datepicker__navigation-icon{
+  @apply !top-[5px]
+}
+.react-datepicker__header {
+  @apply font-sans
+}
+.react-datepicker__day{
+  @apply !font-sans
+}
+.react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover{
+  @apply !rounded-none
+}
+.react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover, .react-datepicker__month-text--selected:hover, .react-datepicker__month-text--in-selecting-range:hover, .react-datepicker__month-text--in-range:hover, .react-datepicker__quarter-text--selected:hover, .react-datepicker__quarter-text--in-selecting-range:hover, .react-datepicker__quarter-text--in-range:hover, .react-datepicker__year-text--selected:hover, .react-datepicker__year-text--in-selecting-range:hover, .react-datepicker__year-text--in-range:hover{
+  @apply !rounded-none;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range{
+  @apply !rounded-none;
+}
+
+
+/* react select  style */
+.react-select-search{
+  @apply text-start;
+}
+.react-select-search .react-select__control{
+  @apply lg:h-17 h-14 pr-4 lg:pl-[60px] pl-[50px] lg:text-md text-base w-full rounded-none outline-none border-none;
+}
+.react-select__value-container{
+  @apply m-0 !p-0;
+}
+.react-select__placeholder{
+  @apply font-medium !text-dark-2 opacity-100;
+}
+.react-select__single-value{
+  @apply font-medium !text-dark-2 opacity-100;
+}
+.react-select__input{
+  @apply placeholder:text-dark-2 lg:text-md text-base !font-semibold placeholder:font-semibold;
+}
+.react-select__indicator-separator{
+  @apply hidden
+}
+.react-select__menu{
+  @apply !rounded-none z-10 relative
+}
+
+/* lg:h-17 h-14 pr-4 lg:pl-[60px] pl-[50px] lg:text-md text-base w-full placeholder:text-dark-2  */
+
+
+
+/* Details styles */
+.disc__wrapper p{
+  @apply text-dark-3 leading-[1.62] lg:text-base text-sm lg:pb-6 pb-5;
+}
+.disc__wrapper h3, .disc__wrapper h2, .disc__wrapper h1, .disc__wrapper h4, .disc__wrapper h5{
+  @apply text-dark-1 leading-[1.42] font-medium mt-[10px] mb-[14px];
+}
+.disc__wrapper h3{
+  @apply lg:text-2xl md:text-xl text-lg;
+}
+.disc__wrapper h4{
+  @apply lg:text-[25px] text-2md;
+}
+.disc__wrapper ul{
+  @apply mb-[25px];
+}
+.disc__wrapper ul li{
+  @apply lg:text-md text-sm font-medium text-dark-3 lg:mt-[18px] mt-3 first:mt-0 flex items-center relative;
+}
+.disc__wrapper ul li i{
+  @apply shrink-0 mr-3 text-primary-1 text-2md;
+}
+.custom_order__list{
+  @apply mb-[25px]
+}
+.custom_order__list li{
+  @apply flex lg:mt-[18px] mt-3 first:mt-0;
+}
+.custom_order__list li .list__count{
+  @apply lg:text-sm text-xs font-semibold text-primary-1 inline-flex justify-center items-center lg:w-base lg:h-base w-6 h-6 border border-primary-1 rounded-full shrink-0 mr-3
+}
+.custom_order__list li .list__content h5{
+  @apply mt-[3px] lg:text-md text-sm font-medium text-dark-3 font-sans mb-[10px]
+}
+.custom_order__list li .list__content p{
+  @apply mb-0;
+}
+.disc__wrapper blockquote{
+  @apply lg:py-7 py-6 lg:px-10 px-8  bg-primary-1 mt-3 mb-8
+}
+.disc__wrapper blockquote p{
+  @apply lg:text-2md text-md text-dark-1 font-medium pb-3
+}
+.disc__wrapper blockquote cite{
+  @apply relative pl-10 text-dark-2 font-medium before:absolute before:content-[''] before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-9 before:h-[1.5px] before:bg-dark-2
+}
+.pack__disc h3, .pack__disc h2, .pack__disc h1, .pack__disc h4, .pack__disc h5{
+  @apply text-dark-1 leading-[1.42] font-medium mt-[10px] mb-[14px];
+}
+.pack__disc h3{
+  @apply lg:text-2xl md:text-xl text-lg;
+}
+.pack__disc p{
+  @apply text-dark-3 leading-[1.62] lg:text-base text-sm lg:pb-6 pb-5;
+}
+.pack__list{
+  @apply flex font-medium text-dark-3 flex-wrap text-xs md:text-sm lg:text-base;
+}
+.pack__list li{
+  @apply flex mt-[5px] items-center relative first:pl-0 lg:pl-5 lg:pr-5 pl-4 pr-4 before:content-[''] before:absolute before:h-2/3 before:w-[1px] before:bg-dark-3 before:-translate-y-1/2 before:top-1/2 before:left-0 first:before:hidden;
+}
+.pack__list li i, .pack__list li svg{
+  @apply mr-2 text-dark-2
+}
+
+.single__count .day__count{
+  @apply relative z-1 before:z-minus before:absolute before:content-[''] before:left-1/2 before:top-0 before:-translate-x-1/2 before:h-full before:border-l before:border-primary-1 before:border-dashed;
+}
+.single__count:last-child .day__count{
+  @apply before:hidden;
+}
+
+.single__count p{
+  @apply pb-0
+}
+.single__count ul{
+  @apply pt-6
+}
+.single__count ul li{
+  @apply lg:text-md text-sm font-medium text-dark-3 lg:mt-[18px] mt-3 first:mt-0 flex items-center relative;
+}
+.single__count ul li i{
+  @apply shrink-0 mr-3 text-primary-1 text-2md;
+}
+.single__count ul.list-sm li{ 
+  @apply lg:text-base text-sm font-normal mt-2 first:mt-0;
+}
+
+.single__count ul.list-sm li i{
+  @apply shrink-0 mr-2 text-primary-1 text-md;
+}
+
+/* mesonary image gallary */
+.masonry-container {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+    
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 16px;
+  overflow: hidden;
+}
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+.masonry-item img {
+  display:block;
+  width: 100%;
+}
+
+/* Header Style */
+
+/* .header-style.sticky{
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  @apply fixed top-0 left-0 w-full xl:py-[8px] z-20 shadow-lg bg-white bg-no-repeat bg-cover;
+} */
+
+.header-style.sticky{
+  @apply shadow-lg;
+}
+.header-style{
+  @apply px-3 xl:py-[10px] py-[8px] fixed z-20 left-0 top-0 w-full bg-white duration-200 ease-in-out; 
+}
+.herder-variant-three{
+  @apply !bg-transparent
+}
+.herder-variant-three.sticky{
+  @apply !bg-white
+}
+.herder-variant-two{
+  @apply !bg-transparent
+}
+
+.herder-variant-two.sticky{
+  @apply !bg-[#121316]
+}
+
+/* Marquee style */
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content  a{
+  @apply hover:text-primary-1 duration-100 inline-block lg:px-6 px-4 relative before:absolute before:content-[''] before:h-1 before:w-1 before:rounded before:right-[-4px] before:top-1/2 before:-translate-y-1/2 before:bg-white
+}
+
+/* tab component */
+.tab-link.active {
+  @apply border border-dark-1
+}
+.tab-content {
+  @apply hidden opacity-0 translate-y-3;
+  animation: fadeIn 0.5s ease 1 forwards;
+}
+.tab-content.active {
+  @apply block;
+}
+.booking-tabs .tab-link, .login-tabs .tab-link{
+  @apply  lg:py-3 lg:px-10 py-[10px] px-5 inline-flex gap-2 items-center justify-center  font-medium font-sans bg-transparent border border-primary-1 text-primary-1 hover:text-white text-center hover:bg-primary-1 duration-300 cursor-pointer;
+}
+.booking-tabs .tab-link.active, .login-tabs .tab-link.active{
+  @apply text-white bg-primary-1;
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Range Slider */
+.range-slider .ui-slider{
+  @apply rounded-none h-[6px] bg-primary-1 bg-opacity-20;
+}
+.range-slider .ui-slider-range{
+  @apply bg-primary-1
+}
+.range-slider .ui-slider-handle{
+  @apply bg-white rounded-full h-7 w-7 top-1/2 -translate-y-1/2 border-2 border-primary-1;
+}
+.range-slider .ui-slider-handle.ui-state-focus{
+  @apply bg-primary-1 border-primary-1 outline-none;
+}
+
+/* Dropdown Component */
+.person-dropdown{
+  @apply w-full py-5 px-4 border-primary-1 border border-opacity-70
+}
+
+
+
+/* custom checkbox */
+.custom-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom-checkbox label {
+  position: relative;
+  cursor: pointer;
+  color: #353535;
+}
+
+.custom-checkbox label:before {
+  content:'';
+  -webkit-appearance: none;
+  border: 1px solid #E8604C;
+  background: #e8614c18;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 8px;
+  top: -2px;
+}
+.custom-checkbox input:checked + label::before{
+  background: #E8604C;
+}
+.custom-checkbox input:checked + label{
+  color: #1E1E1E;
+}
+.custom-checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 6.5px;
+  width: 5px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+/* DatePicker Style */
+
+.daterangepicker{
+  font-family: unset;
+  border-radius: 0;
+  border: 1px solid #E8604C;
+}
+.daterangepicker td{
+  border-radius:  0 !important;
+}
+.daterangepicker td.active{
+  border-radius: 0;
+  background: #E8604C;
+}
+.daterangepicker td.active:hover{
+  border-radius: 0;
+  background: #E8604C;
+}
+.drp-buttons .btn-primary{
+  background: #E8604C;
+  color: #fff;
+  padding: 6px 10px !important;
+  font-size: 14px !important;
+}
+
+
+/* dropdown active */
+
+.person-dropdown.common_dropdown__active{
+  @apply visible opacity-100 translate-y-0;
+}
+
+
+
+.tab-link-button{
+  @apply  lg:py-3 lg:px-10 py-[10px] px-5 inline-flex gap-2 items-center justify-center  font-medium font-sans bg-transparent border border-primary-1 text-primary-1 hover:text-white text-center hover:bg-primary-1 duration-300 cursor-pointer w-full;
+}
+
+.tab-link-button.active{
+  @apply text-white bg-primary-1;
+}
+
+/* multistep form */
+.single-step-count{
+  @apply flex flex-col lg:flex-row items-center gap-3 text-dark-2 font-medium lg:text-md text-sm opacity-60;
+}
+
+.single-step-count.active-count{
+  @apply opacity-100;
+}
+/* .tab {
+  display: none;
+} */
+
+
+/* Loading bar */
+.loader-line {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.loader-line:before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  height: 5px;
+  width: 30%;
+  background-color: #E8604C;
+  -webkit-animation: lineAnim 1s linear infinite;
+  -moz-animation: lineAnim 1s linear infinite;
+  animation: lineAnim 1s linear infinite;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+@keyframes lineAnim {
+  0% {
+      left: -40%;
+  }
+  50% {
+      left: 20%;
+      width: 20%;
+  }
+  100% {
+      left: 100%;
+      width: 50%;
+  }
+}
+
+
+/* Reange Slider CSS */
+.rc-slider-rail{
+  background-color: #FAD5CE !important;
+}
+.rc-slider-track, .rc-slider-tracks{
+  background-color: #E8604C !important;
+}
+.rc-slider-handle{
+  border: 2px solid #E8604C !important;
+}
+
+
+
+/* Dashboard styles */
+.ds__link{
+  @apply lg:text-base text-sm font-medium text-gray-700 lg:px-6 px-4 lg:py-4 py-3 w-full flex items-center whitespace-nowrap;
+}
+
+.ds__link.active__ds{
+  @apply text-white bg-primary-1;
+}
+
+.dashboard-table{
+  @apply w-full text-base;
+}
+
+.dashboard-table tr{
+  @apply even:bg-primary-1 even:bg-opacity-5
+}
+.dashboard-table thead{
+  @apply bg-primary-1;
+}
+
+.dashboard-table tbody td, th{
+  @apply py-3 px-4 text-start last:text-end lg:text-base text-sm;
+}
+
+.dashboard-table.profile-v tbody td, th{
+  @apply py-[14px] px-4 text-start lg:text-base text-sm;
+}
+
+.dashboard-table .tag{
+  @apply text-[12px] px-2 py-[3px] rounded-full
+}
+.details-btn{
+  @apply text-sm px-3 bg-[#219FFF] text-white py-1;
+}
