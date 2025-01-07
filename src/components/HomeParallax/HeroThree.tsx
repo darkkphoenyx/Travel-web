@@ -5,7 +5,7 @@ const HeroThree = () => {
   return (
     <div className="relative">
       <Parallax
-        bgImage={"/assets/images/hero/h4.webp"}
+        bgImage={"/assets/images/hero/h4.png"}
         strength={-150}
         bgImageAlt="background"
         bgClassName="object-cover"
