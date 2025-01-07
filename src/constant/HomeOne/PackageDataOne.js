@@ -13,7 +13,7 @@ const PackageDataOne = {
         },
         {
             id: '2',
-            img: '/assets/images/packages/p1-2.webp',
+            img: '/assets/images/packages/p1-2.png',
             title: "Maldives Sightseeing Adventure Tours",
             duration: '03',
             price: '250',
@@ -21,7 +21,7 @@ const PackageDataOne = {
         },
         {
             id: '3',
-            img: '/assets/images/packages/p1-3.webp',
+            img: '/assets/images/packages/p1-3.png',
             title: "Buenos Aires, Calafate, Abruzzo, Italy",
             duration: '03',
             price: '250',
@@ -29,7 +29,7 @@ const PackageDataOne = {
         },
         {
             id: '4',
-            img: '/assets/images/packages/p1-4.webp',
+            img: '/assets/images/packages/p1-4.png',
             title: "mount everest hike to base camp",
             discount: '30',
             duration: '03',
@@ -38,7 +38,7 @@ const PackageDataOne = {
         },
         {
             id: '5',
-            img: '/assets/images/packages/p1-5.webp',
+            img: '/assets/images/packages/p1-5.png',
             title: "longest sea beach in the asia, cox's bazar",
             duration: '03',
             price: '250',
@@ -46,7 +46,7 @@ const PackageDataOne = {
         },
         {
             id: '6',
-            img: '/assets/images/packages/p1-6.webp',
+            img: '/assets/images/packages/p1-6.png',
             title: "Cusco & Salkantay Trekking to Machu Picchu",
             duration: '03',
             price: '250',
@@ -54,7 +54,7 @@ const PackageDataOne = {
         },
         {
             id: '7',
-            img: '/assets/images/packages/p1-7.webp',
+            img: '/assets/images/packages/p1-7.png',
             title: "Darwin to Broome Overland Adventure",
             duration: '03',
             price: '250',
@@ -62,7 +62,7 @@ const PackageDataOne = {
         },
         {
             id: '8',
-            img: '/assets/images/packages/p1-8.webp',
+            img: '/assets/images/packages/p1-8.png',
             title: "Casablanca Valley Wine Tasting Days",
             duration: '03',
             price: '250',
@@ -70,7 +70,7 @@ const PackageDataOne = {
         },
         {
             id: '9',
-            img: '/assets/images/packages/p1-9.webp',
+            img: '/assets/images/packages/p1-9.png',
             title: "Kakadu and Litchfield Burgundy, France",
             duration: '03',
             price: '250',
