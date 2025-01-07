@@ -7,14 +7,14 @@ const DestinationTwo = () => {
         <div className="destination_style__three bg-gradient-to-t to-[#FFF4E2] from-white lg:pt-30 pt-24 mt-30 lg:pb-30 pb-24">
             <div className="container">
                 <div className="text-center lg:pb-[60px] pb-[40px]">
-                    <h5 className="section-sub-title-v1 variant-2">{DestinationDataOne?.sub_title}</h5>
+                    <h5 className="section-sub-title-v1 variant-2 ">{DestinationDataOne?.sub_title}</h5>
                     <h2 className="section-title-v1">{DestinationDataOne.Title}</h2>
                 </div>
                 <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-base">
                     {DestinationDataOne?.destinations?.slice(0, 5).map((item) => (
                         <div className="text-center group " key={item.id}>
                             <Link href="/destination-details" className="shadow-custom-2 px-6 py-6 flex justify-center items-center lg:min-h-[200px] bg-white ">
-                                <img src={item.image} alt="map" className="group-hover:scale-110 duration-200 lg:h-[120px]" />
+                                <img src={item.image} alt="map" className="h-[138px] w-[138px] group-hover:scale-110 duration-200 " />
                             </Link>
                             <h4 className="lg:text-[22px] text-md font-medium text-dark-1 leading-1.6 lg:mt-7 mt-5">
                                 <Link href="/destination-details">{item.title}</Link>
