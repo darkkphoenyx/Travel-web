@@ -12,6 +12,7 @@ const FooterOne = () => {
                         <img
                             src={FooterDataOne.logo} 
                             alt="logo" 
+                            className="h-[48px]"
                         />
                     </Link>
                     <div className="flex align-middle justify-center lg:gap-x-9 gap-y-5 gap-x-7 flex-wrap">

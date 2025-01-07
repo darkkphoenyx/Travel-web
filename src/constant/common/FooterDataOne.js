@@ -1,6 +1,6 @@
 
 const FooterDataOne ={
-    logo: "/assets/images/logo-white.png",
+    logo: "/assets/images/logo.png",
     bgImg: '/assets/images/backgrounds/footer-bg-1.webp',
     bgImg2: '/assets/images/backgrounds/footer-bg-2.png',
     whatsappLink: "/",
