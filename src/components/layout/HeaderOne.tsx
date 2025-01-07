@@ -51,10 +51,10 @@ const HeaderOne = ({
           <Link href="/" className="shrink-0">
             <Image
               alt="logo"
-              width="300"
+              width="200"
               height="48"
               // layout="responsive"
-              className="max-w-[300px]"
+              className="max-w-[200px]"
               src="/assets/images/logo.png"
               priority
             />
@@ -62,154 +62,22 @@ const HeaderOne = ({
           <div className="main-menu uppercase ml-4">
             <ul className="flex items-center nav-list">
               {/* dropdown */}
-              <li className="group/step-one">
-                <Link href="#" className="nav-link has-dropdown">
+              <li className="home">
+                <Link href="/" className="nav-link">
                   Home
                 </Link>
-                <ul className="nav-dropdown">
-                  <li>
-                    <Link href="/">Home Classic</Link>
-                  </li>
-                  <li>
-                    <Link href="/home-dark">Home Dark</Link>
-                  </li>
-                  <li>
-                    <Link href="/home-parallax">Home Parallax</Link>
-                  </li>
-                </ul>
               </li>
               {/* dropdown */}
-              <li className="group/step-one">
-                <Link href="#" className="nav-link has-dropdown">
-                  Pages
+              <li className="aboutUs">
+                <Link href="/about" className="nav-link ">
+                  About Us
                 </Link>
-                <ul className="nav-dropdown">
-                  <li>
-                    <Link href="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link href="/destinations">Destinations</Link>
-                  </li>
-                  <li>
-                    <Link href="/destination-details">Destination Details</Link>
-                  </li>
-                  <li>
-                    <Link href="/guides">Guides</Link>
-                  </li>
-                  <li>
-                    <Link href="/gallary">Gallary</Link>
-                  </li>
-                  <li>
-                    <Link href="/login">Sign Up / Sign In</Link>
-                  </li>
-                  <li>
-                    <Link href="/booking">Booking</Link>
-                  </li>
-                </ul>
               </li>
               {/* mega dropdown */}
-              <li className="group/mega-dropdown">
-                <Link href="#" className="nav-link has-dropdown">
-                  Destination
+              <li className="contactUs">
+                <Link href="/contact" className="nav-link">
+                  Contact Us
                 </Link>
-                <div className="nav-mega-dropdown grid grid-cols-6 gap-x-1">
-                  <div className="col-span-4 border-r">
-                    <Link
-                      href="/package-sidebar"
-                      className="py-2 flex items-center border-b border-stock-1 text-base text-dark-1 hover:text-primary-1 duration-200"
-                    >
-                      Browse All Destination
-                      <div className="max-w-[20px] ml-2">
-                        <svg
-                          className="group-hover/btn:translate-x-2 duration-200 "
-                          width={27}
-                          height={14}
-                          viewBox="0 0 27 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0.217443 6.25H18.4827C18.6276 6.25 18.7001 6.30263 18.7001 6.40789V7.59211C18.7001 7.69737 18.6276 7.75 18.4827 7.75H0.217443C0.0724811 7.75 0 7.69737 0 7.59211V6.40789C0 6.30263 0.0724811 6.25 0.217443 6.25Z"
-                            fill="currentColor"
-                          />
-                          <path
-                            d="M20.7001 12.28L25.0467 7.9333C25.5601 7.41997 25.5601 6.57997 25.0467 6.06664L20.7001 1.71997"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeMiterlimit={10}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </Link>
-                    <ul className="grid grid-cols-3 mega-dropdown-links">
-                      <li>
-                        <Link href="/package-sidebar">New York</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">London</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Paris</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Dubai</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Miami</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Rome</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Seattle</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Amsterdam</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Chicago</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Las vegas</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Barcelona</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Cox's Bazar</Link>
-                      </li>
-                      <li>
-                        <Link href="/package-sidebar">Istanbul</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-span-2">
-                    <Link href="/package-sidebar">
-                      <Image
-                        src="/assets/images/backgrounds/offer-banner.webp"
-                        alt="offer-banner w-full"
-                        width={250}
-                        height={230}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </li>
-              {/* dropdown */}
-              <li className="group/step-one">
-                <Link href="#" className="nav-link has-dropdown">
-                  Blogs
-                </Link>
-                <ul className="nav-dropdown">
-                  <li>
-                    <Link href="/blog-list">Blog List</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-details">Blog Details</Link>
-                  </li>
-                </ul>
               </li>
               {/* dropdown */}
               <li className="group/step-one">
@@ -293,124 +161,23 @@ const HeaderOne = ({
           className={`mobil-menu ${toggle ? "mm-active" : ""}`}
         >
           <ul>
-            <li className="group/step-one">
-              <Link
-                href="#"
-                className="nav-link nav-link-sm has-dropdown "
-                onClick={ToggleSubMenu}
-              >
+            <li className="home">
+              <Link href="/" className="nav-link nav-link-sm  ">
                 Home
               </Link>
-              <ul className="nav-dropdown-sm">
-                <li>
-                  <Link href="/">Home Classic</Link>
-                </li>
-                <li>
-                  <Link href="/home-dark">Home Dark</Link>
-                </li>
-                <li>
-                  <Link href="/home-parallax">Home Parallax</Link>
-                </li>
-              </ul>
             </li>
-            <li className="group/step-one">
-              <Link
-                href="#"
-                className="nav-link nav-link-sm has-dropdown"
-                onClick={ToggleSubMenu}
-              >
-                Pages
+            <li className="aboutUs">
+              <Link href="/about" className="nav-link nav-link-sm ">
+                About Us
               </Link>
-              <ul className="nav-dropdown-sm">
-                <li>
-                  <Link href="/about">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/destinations">Destinations</Link>
-                </li>
-                <li>
-                  <Link href="/destination-details">Destination Details</Link>
-                </li>
-                <li>
-                  <Link href="/guides">Guides</Link>
-                </li>
-                <li>
-                  <Link href="/gallary">Gallary</Link>
-                </li>
-                <li>
-                  <Link href="/login">Sign Up / Sign In</Link>
-                </li>
-                <li>
-                  <Link href="/booking">Booking</Link>
-                </li>
-              </ul>
             </li>
-            <li className="group/step-one">
+            <li className="contactUs">
               <Link
-                href="#"
-                className="nav-link nav-link-sm has-dropdown "
-                onClick={ToggleSubMenu}
+                href="/contact"
+                className="nav-link nav-link-sm"
               >
-                Destination
+                Contact
               </Link>
-              <ul className="nav-dropdown-sm">
-                <li>
-                  <Link href="/package-sidebar">New York</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">London</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Paris</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Dubai</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Miami</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Rome</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Seattle</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Amsterdam</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Chicago</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Las vegas</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Barcelona</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Cox's Bazar</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Istanbul</Link>
-                </li>
-              </ul>
-            </li>
-            <li className="group/step-one">
-              <Link
-                href="#"
-                className="nav-link nav-link-sm has-dropdown "
-                onClick={ToggleSubMenu}
-              >
-                Blogs
-              </Link>
-              <ul className="nav-dropdown-sm">
-                <li>
-                  <Link href="/blog-list">Blog List</Link>
-                </li>
-                <li>
-                  <Link href="/blog-details">Blog Details</Link>
-                </li>
-              </ul>
             </li>
             <li className="group/step-one">
               <Link
