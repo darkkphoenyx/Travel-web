@@ -6,37 +6,37 @@ const BlogData = {
             id: '1',
             title: "Indulge in purest forms of body care with.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-5.webp",
+            img: "/assets/images/blog/p1-5.png",
         },
         {
             id: '2',
             title: "Best Places to Visit in Dalhousie, Himachal.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-2.webp",
+            img: "/assets/images/blog/p1-2.png",
         },
         {
             id: '3',
             title: "Benefit from a 15% discount mak your reservations.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-3.webp",
+            img: "/assets/images/blog/p1-3.png",
         },
         {
             id: '4',
             title: "Indulge in purest forms of body care with.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-4.webp",
+            img: "/assets/images/blog/p1-4.png",
         },
         {
             id: '5',
             title: "Indulge in purest forms of body care with.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-5.webp",
+            img: "/assets/images/blog/p1-5.png",
         },
         {
             id: '6',
             title: "Indulge in purest forms of body care with.",
             tags: ["City Travel", "Vacation"],
-            img: "/assets/images/blog/b1-6.webp",
+            img: "/assets/images/blog/p1-6.png",
         },
     ]
 }
