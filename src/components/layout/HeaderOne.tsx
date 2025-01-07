@@ -47,14 +47,14 @@ const HeaderOne = ({
            `}
     >
       <div className="desktop-menu max-w-[1570px] mx-auto justify-between items-center xl:flex hidden">
-        <div className="main-menu flex items-center ">
+        <div className="main-menu flex items-center w-full justify-center">
           <Link href="/" className="shrink-0">
             <Image
               alt="logo"
-              width="100"
-              height="70"
+              width="300"
+              height="48"
               // layout="responsive"
-              className="max-w-[58px]"
+              className="max-w-[300px]"
               src="/assets/images/logo.png"
               priority
             />
