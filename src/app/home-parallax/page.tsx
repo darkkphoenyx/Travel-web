@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 const HomeParallax = () => {
   return (
     <>
+
       <HeroThree />
       <PackageThree />
       <DestinationTwo />

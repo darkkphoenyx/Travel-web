@@ -10,7 +10,7 @@ const ClientsTwo = () => {
 
                 >
                     {ClientsDataTwo?.clients?.map((client)=>(
-                        <div className="lg:min-h-[120px] mx-6 min-w-[200px] py-5 px-5 text-center border border-slate-100 flex justify-center items-center" key={client.id}>
+                        <div className="lg:max-h-[120px] mx-6 max-w-[200px] py-5 px-5 text-center border border-slate-100 flex justify-center items-center" key={client.id}>
                         <img src={client.logo} key={client.id} alt="partner-logo" />
                     </div>
                     ))}
