@@ -1,4 +1,3 @@
-import BlogOne from "@/components/HomeOne/BlogOne";
 import VideoBanner from "@/components/HomeOne/VideoBannerOne";
 import DestinationTwo from "@/components/HomeParallax/DestinationTwo";
 import Features from "@/components/HomeParallax/Features";
@@ -34,7 +33,6 @@ const HomeParallax = () => {
       <DestinationTwo />
       <Features />
       <VideoBanner />
-      <BlogOne />
       <InstagramFeed />
     </>
   );
