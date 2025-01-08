@@ -81,27 +81,9 @@ const HeaderOne = ({
               </li>
               {/* dropdown */}
               <li className="group/step-one">
-                <Link href="#" className="nav-link has-dropdown">
+                <Link href="/package-list" className="nav-link ">
                   Packages
                 </Link>
-                <ul className="nav-dropdown">
-                  <li>
-                    <Link href="/package-list">Package List</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-sidebar">Package List Sidebar</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details">
-                      Package Details - Layout I
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details-2">
-                      Package Details - Layout II
-                    </Link>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -172,39 +154,18 @@ const HeaderOne = ({
               </Link>
             </li>
             <li className="contactUs">
-              <Link
-                href="/contact"
-                className="nav-link nav-link-sm"
-              >
+              <Link href="/contact" className="nav-link nav-link-sm">
                 Contact
               </Link>
             </li>
             <li className="group/step-one">
               <Link
-                href="#"
-                className="nav-link nav-link-sm has-dropdown "
+                href="/package-list"
+                className="nav-link nav-link-sm"
                 onClick={ToggleSubMenu}
               >
                 Packages
               </Link>
-              <ul className="nav-dropdown-sm">
-                <li>
-                  <Link href="/package-list">Package List</Link>
-                </li>
-                <li>
-                  <Link href="/package-sidebar">Package List Sidebar</Link>
-                </li>
-                <li>
-                  <Link href="/package-details">
-                    Package Details - Layout I
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/package-details-2">
-                    Package Details - Layout II
-                  </Link>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
