@@ -15,7 +15,7 @@ const PackageCardOne = (
     ) => {
     return (
         <div className="group/card package-card-style-one wow fadeInUp">
-            <div className="overflow-hidden relative">
+            <div className="overflow-hidden relative ">
                 <Link href="/package-details">
                     <Image 
                         width={820}
@@ -33,7 +33,7 @@ const PackageCardOne = (
             <h3 className="card-title-alpha group-hover/card:text-primary-1 lg:mt-6 mt-5">
                 <Link href="/package-details">{title}</Link>
             </h3>
-            <ul className="flex flex-wrap lg:text-[15px] text-[13px] font-medium text-dark-2 mt-4 package-feature">
+            <ul className="flex flex-wrap lg:text-[15px] text-[13px] font-medium text-dark-2 mt-4 package-feature ">
                 <li>
                     <span className="text-primary-1">
                         <i className="bi bi-people" />

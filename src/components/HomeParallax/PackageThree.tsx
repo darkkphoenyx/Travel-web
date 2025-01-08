@@ -65,7 +65,6 @@ const PackageThree = () => {
                                     price={item.price}
                                     duration={item.duration}
                                     people={item.people}
-                                    discount={item.discount}
                                 />
                             </SwiperSlide>
                         ))

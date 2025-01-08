@@ -143,29 +143,6 @@ const PackageDetails = () => {
                     </div>
                   </li>
                 </ul>
-                {/* <div className="mt-6">
-                  <h3>Some Photo</h3>
-                  <p>Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam. Nulla ultrices ex at erat
-                    pharetra, vitae viverra mauris condimentum. Sed ullamcorper dignissim enim, vel egestas
-                    lacus tincidunt ac. Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam.</p>
-                  <div className="grid grid-cols-3 gap-5 mt-2">
-                    <div className="col-span-1">
-                      <a href="./assets/images/details/g1.webp" data-fancybox="details">
-                        <img src="./assets/images/details/g1.webp" alt="details" className="w-full" />
-                      </a>
-                    </div>
-                    <div className="col-span-1">
-                      <a href="./assets/images/details/g2.webp" data-fancybox="details">
-                        <img src="./assets/images/details/g2.webp" alt="details" className="w-full" />
-                      </a>
-                    </div>
-                    <div className="col-span-1">
-                      <a href="./assets/images/details/g3.webp" data-fancybox="details">
-                        <img src="./assets/images/details/g3.webp" alt="details" className="w-full" />
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
                 <div className="lg:pt-10 pt-8">
                   <h3>Tour Plan</h3>
                   <p>Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam. Nulla ultrices ex at erat
@@ -300,7 +277,6 @@ const PackageDetails = () => {
                   <p>Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam. Nulla ultrices ex at erat
                     pharetra, vitae viverra mauris condimentum. Sed ullamcorper dignissim enim, vel egestas
                     lacus tincidunt ac. Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam.</p>
-                  {/* <div id="map" className="lg:h-[400px] h-[200px]" /> */}
                   <DynamicMap position={PackageDetailsData?.position} />
                 </div>
                 <div className="lg:pt-10 pt-8">
