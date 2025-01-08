@@ -10,8 +10,6 @@ import dynamic from "next/dynamic";
 
 import PackageDetailsSlider from "@/components/package/PackageDetailsSlider";
 import PackageDetailsData from "@/constant/Package/PackageDetailsData";
-import PackageBookingForm from "@/components/package/PackageBookingForm";
-import PackageGallary from "@/components/package/PackageGallary";
 import { Metadata } from "next";
 
 const DynamicMap = dynamic(() => import("@/components/package/PackageMap"), {
@@ -374,18 +372,6 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
                   </div>
                 </div>
                 <div className="lg:pt-10 pt-8">
-                  <h3>Gallery</h3>
-                  <p>
-                    Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam.
-                    Nulla ultrices ex at erat pharetra, vitae viverra mauris
-                    condimentum. Sed ullamcorper dignissim enim, vel egestas
-                    lacus tincidunt ac. Duis id interdum ex, eu accumsan massa.
-                    Fusce vel nibh diam.
-                  </p>
-
-                  <PackageGallary />
-                </div>
-                <div className="lg:pt-10 pt-8">
                   <h3>Location</h3>
                   <p>
                     Duis id interdum ex, eu accumsan massa. Fusce vel nibh diam.
@@ -508,11 +494,6 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
                     </div>
                   </div>
                 </form>
-              </div>
-            </div>
-            <div className="lg:col-span-4 col-span-12 relative">
-              <div className="lg:sticky top-[108px]">
-                <PackageBookingForm />
               </div>
             </div>
           </div>
