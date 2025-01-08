@@ -30,7 +30,6 @@ const HomeParallax = () => {
     <>
       <HeroThree />
       <PackageThree />
-      <DestinationTwo />
       <Features />
       <VideoBanner />
       <InstagramFeed />
