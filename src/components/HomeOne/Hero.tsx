@@ -3,7 +3,6 @@ import HeroData from '@/constant/HomeOne/HeroData';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SearchFormOne from './ui/SearchFormOne';
 const Hero = () => {
 
     const { destinatations } = HeroData
@@ -48,11 +47,6 @@ const Hero = () => {
                             </div>
                         </Link>
                     </div>
-                </div>
-                <div className="lg:col-span-6 md:col-span-12 xl:min-h-screen lg:py-30 py-20 !bg-cover !bg-center !bg-no-repeat flex justify-center items-center"
-                    style={{ background: `url("${'/assets/images/hero/hero.webp'}")` }}
-                >
-                    <SearchFormOne />
                 </div>
                 <div className="lg:col-span-3 md:col-span-6 hidden lg:flex flex-col">
                     <div className="group hero-card-sm">

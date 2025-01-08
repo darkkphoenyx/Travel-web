@@ -1,7 +1,5 @@
 import AboutOne from "@/components/HomeOne/AboutOne"
 import FeaturedPackages from "@/components/HomeOne/FeaturedPackages"
-import Guide from "@/components/HomeOne/Guide"
-import TestimonialOne from "@/components/HomeOne/TestimonialOne"
 import Breadcrumb from "@/components/layout/Breadcrumb"
 import InstagramFeed from "@/components/layout/InstagramFeed"
 import { Metadata } from "next"
@@ -23,9 +21,7 @@ const About = () => {
                 <AboutOne />
                 <FeaturedPackages />
             </div>
-            <TestimonialOne />
             <InstagramFeed />
-            <Guide/>
         </>
     )
 }
