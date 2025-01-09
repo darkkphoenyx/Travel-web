@@ -58,7 +58,7 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
         <div className="container">
           <div className="flex flex-wrap justify-between pb-8 pt-6 mb-8 border-b border-stock-1">
             <div className="pt-2">
-              <h3 className="lg:text-2xl md:text-xl text-lg text-dark-1 leading-[1.42] font-medium">
+              <h3 className="lg:text-2xl md:text-xl text-xl text-dark-1 leading-[1.42] font-medium">
                 {destination.title}
               </h3>
               <h4 className="text-primary-1 text-md mt-2">
@@ -70,11 +70,13 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
           <div>
             {/* Itinerary Section */}
             <div className="pack__itinerary mt-8">
-              <h4 className="text-xl font-semibold mb-4">Itinerary</h4>
+              <h4 className="lg:text-xl text-lg font-semibold mb-4 italic">
+                Itinerary
+              </h4>
               <ul className="divide-y divide-gray-200">
                 {destination.itinerary.map((item) => (
                   <li key={item.id} className="py-4">
-                    <h5 className="font-bold text-lg">
+                    <h5 className="font-bold lg:text-lg">
                       Day {item.id}: {item.day}
                     </h5>
                     <p className="text-gray-700">{item.program}</p>
@@ -91,8 +93,10 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
             </div>
             {/* Inclusions Section */}
             <div className="pack__inclusions mt-8">
-              <h4 className="text-xl font-semibold mb-4">Inclusions</h4>
-              <ul className="list-disc pl-5">
+              <h4 className="lg:text-xl text-lg font-semibold mb-4 italic">
+                Inclusions
+              </h4>
+              <ul className="list-disc pl-5 lg:text-md text-sm">
                 {destination.inclusions.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -100,8 +104,10 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
             </div>
             {/* Exclusions Section */}
             <div className="pack__exclusions mt-8">
-              <h4 className="text-xl font-semibold mb-4">Exclusions</h4>
-              <ul className="list-disc pl-5">
+              <h4 className="lg:text-xl text-lg font-semibold mb-4 italic">
+                Exclusions
+              </h4>
+              <ul className="list-disc pl-5 lg:text-md text-sm">
                 {destination.exclusions.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -109,8 +115,10 @@ const PackageDetails: React.FC<PageProps> = ({ params }) => {
             </div>
             {/* Notes Section */}
             <div className="pack__notes mt-8">
-              <h4 className="text-xl font-semibold mb-4">Notes</h4>
-              <ul className="list-disc pl-5">
+              <h4 className="lg:text-xl text-lg font-semibold mb-4 italic">
+                Notes
+              </h4>
+              <ul className="list-disc pl-5 lg:text-md text-sm">
                 {destination.notes.activities.map((activity, index) => (
                   <li key={index}>{activity}</li>
                 ))}
