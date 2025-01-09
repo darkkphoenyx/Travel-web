@@ -22,7 +22,7 @@ const FooterOne = () => {
             <img src={FooterDataOne.logo} alt="logo" className="h-[48px]" />
           </Link>
         </div>
-        <div className="pt-10 lg:pb-17 pb-12 gradient-border-top flex items-center justify-between ">
+        <div className="pt-10 lg:pb-17 pb-12 gradient-border-top flex flex-wrap lg:space-y-0 space-y-8 items-center justify-between ">
           <div className="navigation text-white ">
             <h3 className="text-lg text-[#E8604C] font-semibold pb-4">
               Navigation
@@ -53,7 +53,7 @@ const FooterOne = () => {
               Contact Us
             </h3>
             <ul>
-              <li className="mt-5 first:mt-0 flex items-center lg:justify-start justify-end text-stock-1 hover:text-primary-1 duration-200">
+              <li className="mt-5 first:mt-0 flex items-center justify-start text-stock-1 hover:text-primary-1 duration-200">
                 <div className="text-primary-1 shrink-0">
                   <svg
                     width={20}
@@ -78,7 +78,7 @@ const FooterOne = () => {
                   {FooterDataOne.address}
                 </Link>
               </li>
-              <li className="mt-5 first:mt-0 flex items-center lg:justify-start justify-center text-stock-1 hover:text-primary-1 duration-200">
+              <li className="mt-5 first:mt-0 flex items-center justify-start  text-stock-1 hover:text-primary-1 duration-200">
                 <div className="text-primary-1 shrink-0">
                   <svg
                     width={20}
@@ -116,7 +116,7 @@ const FooterOne = () => {
                   {FooterDataOne.phone}
                 </Link>
               </li>
-              <li className="mt-5 first:mt-0 flex items-center lg:justify-start justify-center text-stock-1 hover:text-primary-1 duration-200">
+              <li className="mt-5 first:mt-0 flex items-center justify-start text-stock-1 hover:text-primary-1 duration-200">
                 <div className="text-primary-1 shrink-0">
                   <svg
                     width={20}
@@ -152,7 +152,7 @@ const FooterOne = () => {
               </li>
             </ul>
           </div>
-          <div className="map h-auto w-[500px]">
+          <div className="map h-auto lg:w-[500px] w-full lg:overflow-auto overflow-hidden">
             {/* <DynamicMap position={PackageDetailsData.position} /> */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.7503431188777!2d85.31491716342151!3d27.72217567829886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fb3002dabb%3A0xe95f9858a9f8a7f9!2sBoss%20Adventure%20(P)%20LtD!5e0!3m2!1sen!2snp!4v1736439672316!5m2!1sen!2snp"
