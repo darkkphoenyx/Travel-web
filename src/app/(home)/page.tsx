@@ -1,5 +1,4 @@
 import VideoBanner from "@/components/HomeOne/VideoBannerOne";
-import DestinationTwo from "@/components/HomeParallax/DestinationTwo";
 import Features from "@/components/HomeParallax/Features";
 import HeroThree from "@/components/HomeParallax/HeroThree";
 import PackageThree from "@/components/HomeParallax/PackageThree";
