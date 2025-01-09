@@ -8,7 +8,6 @@ interface PageProps {
 
 import dynamic from "next/dynamic";
 
-import PackageDetailsSlider from "@/components/package/PackageDetailsSlider";
 import PackageDetailsData from "@/constant/Package/PackageDetailsData";
 import { Metadata } from "next";
 
@@ -35,15 +34,11 @@ export const metadata: Metadata = {
 };
 
 const PackageDetails: React.FC<PageProps> = ({ params }) => {
-    const { slug } = params; 
-    console.log(slug)
+  const { slug } = params;
+  console.log(slug);
   return (
     <>
       <div className="bg-gradient-to-t to-[#FFF1EC] from-white">
-        {/* Package Details Slider */}
-        <PackageDetailsSlider
-          slider_images={PackageDetailsData?.slider_images}
-        />
         <div className="container">
           <div className="flex flex-wrap justify-between pb-8 pt-6 mb-8 border-b border-stock-1">
             <div className="pt-2">
