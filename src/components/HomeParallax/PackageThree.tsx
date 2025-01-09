@@ -15,7 +15,7 @@ const PackageThree = () => {
 
 
     return (
-        <div className="package_style__three lg:pt-30 pt-24">
+        <div className="package_style__three lg:pt-30 pt-24 pb-24">
             <div className="container">
                 <div className="flex items-center justify-between">
                     <div className="text-start lg:pb-[60px] pb-[40px]">
@@ -62,10 +62,9 @@ const PackageThree = () => {
                                 <PackageCardOne
                                     title={item.title}
                                     img={item.img}
-                                    price={item.price}
                                     duration={item.duration}
                                     people={item.people}
-                                    discount={item.discount}
+                                    location={item.location}
                                 />
                             </SwiperSlide>
                         ))
@@ -73,7 +72,7 @@ const PackageThree = () => {
                 </Swiper>
 
                 <div className="text-center mt-14">
-                    <Link href="/package-sidebar" className="btn_primary__v1 variant-2">
+                    <Link href="/package-list" className="btn_primary__v1 variant-2">
                         View All
                         <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.42505 16.5999L12.8584 11.1666C13.5 10.5249 13.5 9.4749 12.8584 8.83324L7.42505 3.3999" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
