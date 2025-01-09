@@ -1,7 +1,6 @@
 import Link from "next/link";
 import FooterDataOne from "@/constant/common/FooterDataOne";
 import BackToTop from "./ui/BackToTop";
-import PackageMap from "../package/PackageMap";
 import dynamic from "next/dynamic";
 import PackageDetailsData from "@/constant/Package/PackageDetailsData";
 
