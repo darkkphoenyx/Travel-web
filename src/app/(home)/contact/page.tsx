@@ -1,6 +1,5 @@
 import Breadcrumb from "@/components/layout/Breadcrumb";
 import InstagramFeed from "@/components/layout/InstagramFeed";
-import ContactForm from "@/components/ui/ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -139,7 +138,6 @@ const Contact = () => {
               <h5 className="section-sub-title-v1">Get in Touch</h5>
               <h2 className="section-title-v1">Feel Free to Contact with us</h2>
             </div>
-            <ContactForm />
           </div>
         </div>
       </div>

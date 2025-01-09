@@ -21,7 +21,6 @@ const Features = () => {
                 <h4 className="lg:text-[22px] text-md font-medium text-dark-1 leading-1.6 mt-5">
                   {feature.title}
                 </h4>
-                <p className="regular-text-v1 mt-2">{feature.disc_text}</p>
               </div>
             ))}
           </div>

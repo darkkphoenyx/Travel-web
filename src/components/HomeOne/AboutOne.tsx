@@ -21,7 +21,7 @@ const AboutOne = () => {
                         <div className="mt-7 xl:pl-24 lg:pl-20 relative before:content-[''] before:left-0 before:top-4 before:bg-[#d9d9d9] before:w-[10%] before:h-[1px] lg:before:absolute">
                             <p className="regular-text-v1">{AboutDataOne.disc_text}</p>
                             <h5 className="font-sans text-dark-1 text-md font-medium mt-4">Speak to our Destination Experts
-                                at Direct Call {AboutDataOne.contact}</h5>
+                                at Direct Call <br />{AboutDataOne.contact}</h5>
                         </div>
                         <ul className="pt-6 lg:text-md text-base">
 
@@ -34,14 +34,6 @@ const AboutOne = () => {
                             </li>
                             ))}
                         </ul>
-                        <div className="mt-10">
-                            <Link href="/about" className="btn_primary__v1">
-                                Find Out More
-                                <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.42505 16.5999L12.8584 11.1666C13.5 10.5249 13.5 9.4749 12.8584 8.83324L7.42505 3.3999" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -153,7 +153,13 @@ const FooterOne = () => {
             </ul>
           </div>
           <div className="map h-auto w-[500px]">
-            <DynamicMap position={PackageDetailsData.position} />
+            {/* <DynamicMap position={PackageDetailsData.position} /> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.7503431188777!2d85.31491716342151!3d27.72217567829886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fb3002dabb%3A0xe95f9858a9f8a7f9!2sBoss%20Adventure%20(P)%20LtD!5e0!3m2!1sen!2snp!4v1736439672316!5m2!1sen!2snp"
+              width="500"
+              height="450"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>

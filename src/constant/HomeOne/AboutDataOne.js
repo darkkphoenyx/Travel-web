@@ -7,9 +7,9 @@ const CategoryDataOne = {
   contact: "+977-9861161367",
   imgUrl: `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}about2.png`,
   features: [
-    "All placges and activiates are carefully picked by us.",
+    "All places and activitites are carefully picked by us.",
     "We are an award winning agency",
-    "Trusted by more than 80,000 customers",
+    "Trusted by more than 10,000 customers",
   ],
 };
 export default CategoryDataOne;

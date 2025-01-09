@@ -19,8 +19,9 @@ const HeroThree = () => {
               </h1>
               <div className="max-w-[700px] mx-auto">
                 <p className="lg:text-[25px] md:text-2md text-base pt-4 leading-1.7">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene
-                  an commodo ligula eget dolor. Aenean massa. Cum sociis the
+                  Ready to turn your dream adventure into reality? Let Nepal's
+                  breathtaking landscapes and our expert guides create memories
+                  you'll treasure forever
                 </p>
               </div>
             </div>

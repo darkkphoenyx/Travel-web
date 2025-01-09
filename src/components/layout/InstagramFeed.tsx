@@ -35,9 +35,6 @@ const InstagramFeed = () => {
                                 height={280}
                                 width={290} 
                                 className="w-full" />
-                            <Link href="/" className="insta-feed-icon">
-                                <i className="bi bi-instagram" />
-                            </Link>
                         </div>
                         </SwiperSlide>
                     ))}
