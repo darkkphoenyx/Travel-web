@@ -11,7 +11,6 @@ const PackageDetailsData = {
         'img7.png',
         'img8.png',
         'img9.png',
-        'img10.png',
     ]
 }
 export default PackageDetailsData;
