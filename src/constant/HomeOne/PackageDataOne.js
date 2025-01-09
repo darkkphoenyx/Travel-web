@@ -9,6 +9,7 @@ const PackageDataOne = {
       duration: "07",
       price: "50",
       people: "100",
+      location: "chitwan",
     },
     {
       id: "2",
@@ -17,6 +18,7 @@ const PackageDataOne = {
       duration: "06",
       price: "45",
       people: "50",
+      location: "bardiya",
     },
     {
       id: "3",
@@ -25,6 +27,7 @@ const PackageDataOne = {
       duration: "04",
       price: "40",
       people: "45",
+      location: "lumbini",
     },
     {
       id: "4",
@@ -33,6 +36,7 @@ const PackageDataOne = {
       duration: "05",
       price: "65",
       people: "75",
+      location: "pokhara",
     },
   ],
 };

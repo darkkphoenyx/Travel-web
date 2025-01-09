@@ -48,7 +48,7 @@ const DestinationData = [
     },
   },
   {
-    slug: "pokhara-tour",
+    slug: "pokhara",
     title: "Discover Pokhara",
     sub_title: "Nature and Adventure Hub",
     itinerary: [
@@ -97,7 +97,7 @@ const DestinationData = [
     },
   },
   {
-    slug: "lumbini-pilgrimage",
+    slug: "lumbini",
     title: "Discover Lumbini",
     sub_title: "Birthplace of Buddha",
     itinerary: [
@@ -145,7 +145,7 @@ const DestinationData = [
     },
   },
   {
-    slug: "bardiya-national-park",
+    slug: "bardiya",
     title: "Explore Bardiya National Park",
     sub_title: "Wilderness and Safari Adventures",
     itinerary: [

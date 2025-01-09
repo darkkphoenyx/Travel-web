@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PackageCardOne = (
-    {img, title, discount, duration, price, people} : 
+    {img, title, discount, duration, price, people,location} : 
     {
         img: string, 
         title: string, 
@@ -10,13 +10,14 @@ const PackageCardOne = (
         duration: string,
         price: string,
         people: string
+        location:string
     }
     
     ) => {
     return (
         <div className="group/card package-card-style-one wow fadeInUp">
             <div className="overflow-hidden relative ">
-                <Link href="/package-details">
+                <Link href={`/package-details/${location}`}>
                     <Image 
                         width={820}
                         height={520}
