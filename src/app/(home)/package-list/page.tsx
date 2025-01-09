@@ -51,7 +51,6 @@ const PackageList = () => {
                 key={item.id}
                 title={item.title}
                 img={item.img}
-                price={item.price}
                 duration={item.duration}
                 people={item.people}
                 location={item.location}
