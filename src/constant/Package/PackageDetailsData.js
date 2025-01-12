@@ -1,6 +1,6 @@
 const PackageDetailsData = {
   title: "Cusco & Salkantay Trekking to Machu Picchu",
-  position: [27.7221757, 85.3149172],
+  position: [27.7221711, 85.3148132],
   slider_images: [
     "img1.png",
     "img2.png",

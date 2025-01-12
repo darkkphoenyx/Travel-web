@@ -155,8 +155,8 @@ const FooterOne = () => {
           <div className="map h-auto lg:w-[500px] w-full lg:overflow-auto overflow-hidden">
             {/* <DynamicMap position={PackageDetailsData.position} /> */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.7503431188777!2d85.31491716342151!3d27.72217567829886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fb3002dabb%3A0xe95f9858a9f8a7f9!2sBoss%20Adventure%20(P)%20LtD!5e0!3m2!1sen!2snp!4v1736439672316!5m2!1sen!2snp"
-              width="500"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3449745745897!2d85.31246867153699!3d27.7225360999138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190028a46251%3A0x3d7acfe697f4f5a4!2sAktivferien%20Travels%20%26%20Tour%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1736668538875!5m2!1sen!2snp"
+              width="600"
               height="450"
               loading="lazy"
             ></iframe>

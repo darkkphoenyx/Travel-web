@@ -43,9 +43,9 @@ const Contact = () => {
           />
         </div>
         <div className="container">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-base">
-            <div className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp">
-              <div className="flex">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-base">
+            <div className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp hover:bg-green-100 hover:scale-105 transition-all">
+              <div className="flex ">
                 <div className="mr-[15px] shrink-0 lg:text-3xl text-2xl text-[#219FFF]">
                   <i className="bi bi-envelope-at" />
                 </div>
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
             </div>
             <div
-              className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp"
+              className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp hover:bg-green-100 hover:scale-105 transition-all"
               data-wow-delay="0.2s"
             >
               <div className="flex">
@@ -89,18 +89,18 @@ const Contact = () => {
                     </li>
                     <li>
                       <a
-                        href="tel:+977 - 1 - 4390642"
+                        href="tel:+977-9802369833"
                         className="hover:text-primary-1 duration-200"
                       >
-                        +977 - 1 - 4390642
+                        +977-9802369833
                       </a>
                     </li>
                     <li>
                       <a
-                        href="tel:+977 - 1 - 4390715"
+                        href="tel:+977 - 1 - 4390642"
                         className="hover:text-primary-1 duration-200"
                       >
-                        +977 - 1 - 4390715
+                        +977 - 1 - 4390642
                       </a>
                     </li>
                   </ul>
@@ -108,7 +108,34 @@ const Contact = () => {
               </div>
             </div>
             <div
-              className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp"
+              className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp hover:bg-green-100 hover:scale-105 transition-all"
+              data-wow-delay="0.2s"
+            >
+              <div className="flex">
+                <div className="mr-[15px] shrink-0 lg:text-3xl text-2xl text-[#ff7e33]">
+                  <i className="bi bi-person" />
+                </div>
+                <div>
+                  <h4 className="text-dark-1 lg:text-2md text-md font-semibold">
+                    Account Details
+                  </h4>
+                  <ul className="text-dark-3 space-y-1 text-base font-medium mt-2">
+                    <li>
+                      <a href="#" className="hover:text-primary-1 duration-200">
+                        01 - 5911739
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-primary-1 duration-200">
+                        9802369832
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="shadow-custom-1 bg-white lg:py-8 py-7 px-base wow fadeInUp hover:bg-green-100 hover:scale-105 transition-all "
               data-wow-delay="0.4s"
             >
               <div className="flex">
@@ -125,7 +152,7 @@ const Contact = () => {
                         href="mailto:info@supportcompany.com"
                         className="hover:text-primary-1 duration-200"
                       >
-                        Alka Galli, Kapurdhara, Kathmandu, Nepal
+                        G.P.O. Box: 12057, Alka Galli, Kapurdhara
                       </a>
                     </li>
                   </ul>

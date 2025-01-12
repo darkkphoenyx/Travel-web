@@ -34,7 +34,7 @@ const InstagramFeed = () => {
                                 alt="instagram images"
                                 height={280}
                                 width={290} 
-                                className="w-full" />
+                                className="w-full hover:scale-110 transition-all" />
                         </div>
                         </SwiperSlide>
                     ))}
