@@ -11,6 +11,6 @@ const FooterDataOne = {
   copyrightText: "© Aktivferien 2025 | All rights reserved.",
   phone: "+977-9861161367",
   email: "info@aktivferiennepal.com",
-  address: "Alka Galli, Kapurdhara, Kathmandu, Nepal",
+  address: "G.P.O. Box: 12057, Alka Galli, Kapurdhara",
 };
 export default FooterDataOne;

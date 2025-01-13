@@ -19,7 +19,13 @@ const FooterOne = () => {
       <div className="container">
         <div className="flex justify-center items-center pb-base">
           <Link href="/">
-            <img src={FooterDataOne.logo} alt="logo" className="h-[48px]" />
+            <h2
+              className="text-white md:text-4xl text-2xl"
+              style={{ fontFamily: "Bebas Neue" }}
+            >
+              Aktivferien Travel & Tourirm
+            </h2>
+            {/* <img src={FooterDataOne.logo} alt="logo" className="h-[48px]" /> */}
           </Link>
         </div>
         <div className="pt-10 lg:pb-17 pb-12 gradient-border-top flex flex-wrap lg:space-y-0 space-y-8 items-center justify-between ">

@@ -53,7 +53,7 @@ const HeaderOne = ({
               alt="logo"
               width="200"
               height="48"
-              // layout="responsive"
+              layout="responsive"
               className="max-w-[200px]"
               src="/assets/images/logo.png"
               priority
@@ -95,8 +95,8 @@ const HeaderOne = ({
         <Link href="/" className="shrink-0 max-w-[50px]">
           <Image
             alt="logo"
-            width="100"
-            height="70"
+            width="200"
+            height="100"
             src="/assets/images/logo.png"
           />
         </Link>
