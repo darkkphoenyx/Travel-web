@@ -50,7 +50,7 @@ const HeaderOne = ({
         <div className="main-menu flex items-center w-full justify-center">
           <Link href="/" className="nav-link">
             <h2 className="text-2xl" style={{ fontFamily: "Bebas Neue" }}>
-              Aktivferien Travel & Tourirm
+              Aktivferien Travel & Tours
             </h2>
           </Link>
           <div className="main-menu uppercase ml-4">

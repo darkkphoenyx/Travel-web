@@ -23,7 +23,7 @@ const FooterOne = () => {
               className="text-white md:text-4xl text-2xl"
               style={{ fontFamily: "Bebas Neue" }}
             >
-              Aktivferien Travel & Tourirm
+              Aktivferien Travel & Tours
             </h2>
           </Link>
         </div>
