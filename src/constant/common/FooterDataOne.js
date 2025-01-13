@@ -9,7 +9,11 @@ const FooterDataOne = {
   facebookLink: "/",
   youtubeLink: "/",
   copyrightText: "© Aktivferien 2025 | All rights reserved.",
-  phone: "+977-9861161367",
+  whatsapp: "+977-9861161367",
+  reservation1: "+977-01-4390642",
+  reservation2: "+977-9802369833",
+  account1: "9802369833",
+  account2: "01 - 5911739",
   email: "info@aktivferiennepal.com",
   address: "G.P.O. Box: 12057, Alka Galli, Kapurdhara",
 };

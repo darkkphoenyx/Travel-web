@@ -84,25 +84,33 @@ const Contact = () => {
                         href="tel:+977-9861161367"
                         className="hover:text-primary-1 duration-200"
                       >
-                        +977-9861161367
+                        Whatsapp: +977-9861161367
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="tel:+977-9802369833"
-                        className="hover:text-primary-1 duration-200"
-                      >
-                        +977-9802369833
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="tel:+977 - 1 - 4390642"
-                        className="hover:text-primary-1 duration-200"
-                      >
-                        +977 - 1 - 4390642
-                      </a>
-                    </li>
+                    <div className="flex gap-2  ">
+                      <h3 className="text-sm" style={{ fontFamily: "Poppins" }}>
+                        {" "}
+                        Reservation no:
+                      </h3>
+                      <div>
+                        <li>
+                          <a
+                            href="tel:+977-9802369833"
+                            className="hover:text-primary-1 duration-200"
+                          >
+                            +977-9802369833
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="tel:+977 - 1 - 4390642"
+                            className="hover:text-primary-1 duration-200"
+                          >
+                            +977 - 1 - 4390642
+                          </a>
+                        </li>
+                      </div>
+                    </div>
                   </ul>
                 </div>
               </div>
@@ -117,7 +125,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-dark-1 lg:text-2md text-md font-semibold">
-                    Account Details
+                    Account Contact No.
                   </h4>
                   <ul className="text-dark-3 space-y-1 text-base font-medium mt-2">
                     <li>
