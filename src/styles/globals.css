@@ -287,8 +287,9 @@ Styling for long TW class
 .herder-variant-three.sticky .cart__wrap {
   @apply text-dark-1;
 }
+
 .nav-link {
-  @apply py-7 inline-block text-base text-dark-1 uppercase;
+  @apply py-4 inline-block text-base text-dark-1 uppercase;
 }
 .herder-variant-two .nav-link {
   @apply text-white;
@@ -305,6 +306,15 @@ Styling for long TW class
 .herder-variant-three.sticky .nav-link.has-dropdown::before {
   @apply xl:text-dark-1;
 }
+
+.nav-link2 {
+  @apply inline-block text-base text-white uppercase;
+}
+
+.herder-variant-three.sticky .nav-link2 {
+  @apply text-black;
+}
+
 .nav-link-sm {
   @apply !py-[10px] border-b border-stock-1 !block px-3 relative;
 }
@@ -381,9 +391,9 @@ Styling for long TW class
 .hero-glow-text {
   font-family: Poppins;
   color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
-  text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  text-shadow: hsla(0, 0%, 56%, 0.425) -2px 2px 30px;
 }
 
 .jarallax {

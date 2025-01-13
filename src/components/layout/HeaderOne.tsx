@@ -48,16 +48,10 @@ const HeaderOne = ({
     >
       <div className="desktop-menu max-w-[1570px] mx-auto justify-between items-center xl:flex hidden">
         <div className="main-menu flex items-center w-full justify-center">
-          <Link href="/" className="shrink-0">
-            <Image
-              alt="logo"
-              width="200"
-              height="48"
-              layout="responsive"
-              className="max-w-[200px]"
-              src="/assets/images/logo.png"
-              priority
-            />
+          <Link href="/" className="nav-link">
+            <h2 className="text-2xl" style={{ fontFamily: "Bebas Neue" }}>
+              Aktivferien Travel & Tourirm
+            </h2>
           </Link>
           <div className="main-menu uppercase ml-4">
             <ul className="flex items-center nav-list">
@@ -92,13 +86,10 @@ const HeaderOne = ({
 
       {/* mobile menu */}
       <div className="mobile-menu xl:hidden flex justify-between items-center relative">
-        <Link href="/" className="shrink-0 max-w-[50px]">
-          <Image
-            alt="logo"
-            width="200"
-            height="100"
-            src="/assets/images/logo.png"
-          />
+        <Link href="/" className="nav-link2">
+          <h2 className="text-lg" style={{ fontFamily: "Bebas Neue" }}>
+            Aktivferien Travel & Tourirm
+          </h2>
         </Link>
         <div className="space-x-4 flex items-center">
           <Link
